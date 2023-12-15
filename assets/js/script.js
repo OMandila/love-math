@@ -30,9 +30,25 @@ function runGame(gameType){
     if (gameType === "add"){
         displayAdditionQuestion(num1, num2);
     } else {}
-} 
+}
 
+/**
+ * Checks the answer against the first element in
+ * the returned calculateCorrectAnswer array
+ */
 function checkAnswer(){
+    let userAnswer = parseInt(document.getElementById('answer-box').value);
+    let calculatedAnswer = calculateCorrectAnswer();
+    let isCorrect = userAnswer === calculatedAnswer[0];
+
+    if (isCorrect){
+        alert("That's correct! You got it right :D")
+    } else {
+        alert(`You answered ${userAnswer}. The correct answer is ${calculatedAnswer[0]}. Try again!`)
+    }
+
+    runGame(calculatedAnswer[1]);
+
 }
 
 /**
