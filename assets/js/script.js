@@ -68,7 +68,7 @@ function calculateCorrectAnswer() {
 
     if (operator === '+'){
         return [operand1 + operand2, 'add'];
-    } else if (operator === '*'){
+    } else if (operator === 'x'){
         return [operand1 * operand2, 'multiply']
     } else if (operator === '-'){
         return [operand1 - operand2, 'subtract']
@@ -108,6 +108,6 @@ function displaySubtractQuestion(operand1, operand2) {
 
 function displayMultiplyQuestion(operand1, operand2) {
     document.getElementById('operand1').textContent = operand1;
-    document.getElementById('operator').textContent = '*';
+    document.getElementById('operator').textContent = 'x';
     document.getElementById('operand2').textContent = operand2;
 }
