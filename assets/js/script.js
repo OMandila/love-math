@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     })
 
-    runGame('add')
-    
+    runGame('add');
+
 });
 
 /**
@@ -33,15 +33,15 @@ function runGame(gameType){
     document.getElementById('answer-box').value = "";
     document.getElementById('answer-box').focus();
     //Create two random numbers between 1 and 25
-    let num1 = Math.floor(Math.random() * 25) + 1;
-    let num2 = Math.floor(Math.random() * 25) + 1;
+    let num1 = Math.floor(Math.random() * 20) + 1;
+    let num2 = Math.floor(Math.random() * 20) + 1;
 
     if (gameType === "add"){
         displayAdditionQuestion(num1, num2);
     } else if (gameType === "multiply"){
         displayMultiplyQuestion(num1, num2);
     } else if (gameType === "subtract"){
-        displaySubtractQuestion(num1, num2)
+        displaySubtractQuestion(num1, num2);
     } else {}
 }
 
@@ -55,10 +55,10 @@ function checkAnswer(){
     let isCorrect = userAnswer === calculatedAnswer[0];
 
     if (isCorrect){
-        alert("That's correct! You got it right :D")
+        alert("That's correct! You got it right :D");
         incrementScore();
     } else {
-        alert(`You answered ${userAnswer}. The correct answer is ${calculatedAnswer[0]}. Try again!`)
+        alert(`You answered ${userAnswer}. The correct answer is ${calculatedAnswer[0]}. Try again!`);
         incrementWrongAnswer();
     }
 
@@ -78,9 +78,9 @@ function calculateCorrectAnswer() {
     if (operator === '+'){
         return [operand1 + operand2, 'add'];
     } else if (operator === 'x'){
-        return [operand1 * operand2, 'multiply']
+        return [operand1 * operand2, 'multiply'];
     } else if (operator === '-'){
-        return [operand1 - operand2, 'subtract']
+        return [operand1 - operand2, 'subtract'];
     } else {
         alert(`Unimplemented operation ${operator}`);
         throw `Unimplemented operation ${operator}.Aborting!`;
