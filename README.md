@@ -1,39 +1,16 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Love-Maths
+## Introduction
+**Love Maths** is your go to App for sharpening your mental aptitude for simple arithmetic calculations. It was inspired by the following mutual factors:
+- Code Institute's walkthrough project to teach the basics of JavaScript and the DOM using a maths game as part of the curriculum for the Diploma in Full-Stack Software Development course
+- The need to engage my children and their classmates in mental arithmetic activities during their play dates
 
-Welcome,
+## Implemented features
+1. An addition, a subtraction, a multiplication and a division game that requires integers as answers
+2. A counter for tracking correct and incorrect answers
+3. An attractive user interface that is responsive on all screen sizes
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+## Additonal features to be implemented
+1. Provide better feedback to the user instead of using alert()
+2. Add difficulty levels - Easy, Normal, Difficult - that affect the complexity of the questions
+3. Add a countdown timer to the game
+4. Add a high-score chart for people who get the most answers right in the time available (research using local storage)
